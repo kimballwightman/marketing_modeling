@@ -1,0 +1,11 @@
+marketing_modeling:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      threads: 16
+      database: marketing-modeling
+      schema: dbt_dev
+      method: service-account
+      keyfile: ~/.dbt/your-service-account-key.json
+      location: US
